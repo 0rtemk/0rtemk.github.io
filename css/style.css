@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+.main{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+.logo{
+    position: absolute;
+    margin: 0px 0 0 0px;
+    z-index: 100;
+}
+.logo img {
+	border: none;		
+	margin: 0px;		
+}
+.logo a img {
+	border: none;		
+	margin: 0px;			
+}
+
+body{
+    background-color: aquamarine;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+/* Главне меню. Шапка*/
+.menu-main {
+list-style: none;
+text-align: right;
+background: rgb(0, 174, 255);
+padding: 20px;
+}
+.menu-main li {display: inline-flex;}
+.menu-main li:after {
+content: "|";
+color: #606060;
+display:inline-flex;
+vertical-align:top;
+font-size: 30px;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+text-decoration: none;
+font-family: 'Amatic SC', cursive;
+letter-spacing: 4px;
+position: relative;
+padding-bottom: 0px;
+margin: 0 34px 0 30px;
+font-size: 30px;
+text-transform: uppercase;
+display: inline-block;
+transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+content: "";
+position: absolute;
+height: 4px;
+top: auto;
+right: 50%;
+bottom: -5px;
+left: 50%;
+background: #feb386;
+transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+padding: 25px 0 20px; 
+margin: 0 30px;
+}
+}
+
+/* Артикли*/
+.article
+{
+    text-align: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #020305;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left: 400px;
+    padding-top: 150px; 
+    font-size: 50px;
+}
+.article_light{
+    text-shadow:#cccccc -17px -8px 6px;
+    background-image: url(../images/background.jpg);
+}
+
+
+
+/* Таблица */
+.table_light {
+border-collapse: collapse; /* Убираем двойные линии между ячейками */
+width: 1500px; /* Ширина таблицы */
+border: 4px solid #000; /* Рамка вокруг таблицы */
+}
+.table_light th, td {
+border: 1px solid rgb(0, 19, 82); /* Параметры рамки */
+text-align: center; /* Выравнивание по центру */
+padding: 4px; /* Поля вокруг текста */
+}
+
+.table_light tr{
+background: rgb(212, 0, 255); /* Цвет фона ячейки */
+height: 40px; /* Высота ячеек */
+vertical-align: middle; /* Выравнивание по нижнему краю */
+padding: 2px; /* Убираем поля вокруг текста */
+}
+
+.table_light td {
+background: #fc0; /* Цвет фона ячейки */
+height: 40px; /* Высота ячеек */
+vertical-align: middle; /* Выравнивание по нижнему краю */
+padding: 2px; /* Убираем поля вокруг текста */
+}
+
+
+
+/* Подвал */
+.footer{
+display: flex;
+width: 100% - 4px;
+}
+.footer_light{
+    border: 2px solid rgb(0, 19, 82); /* Параметры рамки */
+    background: rgb(0, 174, 255);
+}
+
+.logotypes{
+    flex-direction: row;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer img{
+    margin-left: 30px;
+}
+.podpis{
+    flex-direction: row;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Блоки */
+.wrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.flex-row-div
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.text_possition
+{
+    text-align: center;
+}
+.possition
+{
+    padding-left: 190px;
+}
+.background-color-white
+{
+    background-color: white;
+}
+
+.background-color-pink
+{
+    background: rgb(253, 193, 255);
+}
+
+/*Контакты*/
+
+.possition_1
+{
+    text-align: justify;
+    padding-left: 76px;
+}
+
+
+.links_light
+{
+    background: rgb(253, 193, 255);
+    border: 4px solid rgb(199, 0, 139);
+    width: 300px;
+    height: 140px;
+}
+
+.portfolio_text
+{
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px 30px;
+}
+.portfolio_image
+{
+    margin: 50px  30px;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 4px; /* Толщина линии */
+}
+
+form{
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    border: 4px solid rgb(199, 0, 139);
+}
+
+.vl {
+    border-left: 4px solid red;
+    height: 500px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav_light{
+    background: rgb(0, 174, 255);
+}
+.buttons_kompetetions{
+    padding: 14px 40px;
+    border-radius: 8px;
+    background-color: rgb(109, 109, 109);
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.buttons_kompetetions:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
+
+
+
+
+

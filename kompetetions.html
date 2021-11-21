@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/dark theme.css">
+    <script src = "js/script.js"></script>
+    <script src = "js/cookies.js"></script>
+</head>
+<body class = "body_light" id = "body_id" onload = "isButtonShow(); isDarkTheme_kompetetions();">
+    <a class="logo" href="main.html"><img src="images/logo.jpg" alt="logotype" style="width:77px;height:77px;"></a>
+    <nav class="menu-main nav_light" id="nav_id">
+        <ui>
+            <li><a href="main.html">О себе</a></li>
+            <li><a href="resume.html">Резюме</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="kompetetions.html">Компетенции</a></li>
+            <li><a href="kontacts.html">Контакты</a></li>
+        </ui>
+    </nav>
+
+    <article class="article article_light" id = "article_id">
+        <h1>Веб-технологии</h1>
+        <h3>Университет "Дубна"</h3>
+        <button onclick="add_theme()">Измменить тему</button>
+    </article>
+
+    <div class="main">
+        
+        <button class = "buttons_kompetetions" id="b1" onclick="button1();" style="display:none;">Показать блок 1</button>
+        
+        <section class="main-section background-color-white" id ="skills_1">
+            <div class="wrapper">
+                <div class="flex-row-div flex-row-div-between-center">
+                    <div>
+                        <button class = "buttons_kompetetions" id="b2" onclick="button2();" style = "position: absolute;">Скрыть блок 1</button>
+                    </div>
+                    <div>
+                        <h3 class = "text_possition">Заголовок</h3>
+                        <div class="portfolio_text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda dolores dolorem, ratione error tenetur a nulla molestias, nemo sunt voluptatum exercitationem consequatur, cum et incidunt minus earum ipsum. Sint?
+                            Eveniet dolore obcaecati omnis quidem vero sit ipsam impedit eius qui. Atque voluptate voluptates fuga consequatur, veritatis voluptatum animi officia est consectetur quod dolores suscipit, doloremque, quae similique quibusdam? Blanditiis!
+                        </div>
+                    </div>
+                    <div class = "portfolio_image">    
+                        <img src="https://minecraftonly.ru/uploads/posts/2014-05/1399057064_pzbpnosaeyw.jpg" alt="logotype" style="width:200px;height:200px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <button class = "buttons_kompetetions" id="b11" onclick="button11()" style="display:none;">Показать блок 2</button>
+
+        <section id ="skills_2" class="main-section background-color-black">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <button class = "buttons_kompetetions" id="b22" onclick="button22()" style = "position: absolute;">Скрыть блок 2</button>
+                    </div>
+                    <div>
+                        <h3 class="text_possition">Мои компетенции</h3>
+                    </div>
+                    <div class="flex-row-div flex-row-div-between-center"> 
+                        <div class="possition">
+                            <img src="https://avatars.mds.yandex.net/i?id=a3690b05d70cabf0b35fb3fbab80c5c6-4575448-images-thumbs&n=13&exp=1" alt="logotype" style="width:150px;height:150px;">
+                            <p>Подпись</p>
+                        </div>
+                        
+                        <div class="possition">
+                            <img src="https://yt3.ggpht.com/a/AGF-l790VRS0h1ipCno2ukkQ3b3gVvSgAkKnw5CR4w=s900-c-k-c0xffffffff-no-rj-mo" alt="logotype" style="width:150px;height:150px;">
+                            <p>Подпись</p>
+                        </div>
+                        
+                        <div class="possition">
+                            <img src="https://pbs.twimg.com/profile_images/542953041729576960/zrklnY9n.png" alt="logotype" style="width:150px;height:150px;">
+                            <p>Подпись</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <button class = "buttons_kompetetions" id="b111" onclick="button111()" style="display:none;">Показать блок 3</button>
+
+        <section id ="skills_3" class="main-section background-color-white">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <button class = "buttons_kompetetions" id="b222" onclick="button222()" style = "position: absolute;">Скрыть блок 3</button>
+                    </div>
+                    <div>
+                        <h1 class="text_possition">Услуги</h1>
+                    </div>
+                    <div class="flex-row-div flex-row-div-between-center">
+                        <div>
+                            <ui>
+                                <p><li>Сделать за вас Мат. анализ</li>
+                                <li>Отменить пару</li>
+                                <li>Пройти миссию в Genshine Impact</li>
+                                <li>Собрать шкаф из Ikea</li></p>
+                            </ui>
+                        </div>
+                        <div class ="possition">
+                            <ui>        
+                                <p><li>Сделать "трактор" в C#</li>
+                                <li>Написать курсовую по ПиВУ</li>
+                                <li>Кинуть несмешной мем в беседу группы</li>
+                                <li>Обсудить ТВМС в курилке</li></p>
+                            </ui>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class = "buttons_kompetetions" id="b1111" onclick="button1111()" style="display:none;">Показать блок 4</button>
+        
+        <section class=" main-section background-color-black" id = "skills_4">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <button class = "buttons_kompetetions" id="b2222" onclick="button2222()" style = "position: absolute;">Скрыть блок 4</button>
+                    </div>
+                    <div>
+                        <h1 class="text_possition">Заголовок</h1>
+                    </div>
+                    <div class="flex-row-div flex-row-div-between-center">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quidem quas, qui vero tempore tenetur neque aliquam odit molestias ratione minima nostrum praesentium ad doloremque dicta, recusandae unde aut. Soluta!
+                        Voluptatibus voluptate porro molestias animi voluptates possimus ratione, hic maiores veniam aperiam quasi eos nam quibusdam asperiores earum ullam rem reiciendis, corrupti eaque cumque soluta! Consequatur ipsum corporis sequi nam.
+                        Qui quibusdam quam ab, tempore aut tenetur iste enim aliquid optio, distinctio, sit assumenda. Dolorum iure eaque sequi animi excepturi. Nobis adipisci quis vero deserunt explicabo eaque totam, natus necessitatibus?
+                        Omnis quasi dicta autem ratione aliquam modi quaerat ducimus expedita, architecto, suscipit dignissimos, ad labore cumque optio consequuntur unde nostrum eveniet! Voluptatum maxime fugit, pariatur ut incidunt ipsa nam harum!
+                    </div>
+                    <div class = "text_possition">
+                        <p><input type="button" value=" Понял, принял "></p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </div>
+
+    <footer>
+        <div class="footer footer_light" id = "footer_id">
+            <div class ="logotypes flex-row-div">
+                <a href="https://vk.com/0rtem_k">
+                    <img src="images/VK.png" alt="logotype" style="width:50px;height:50px;">
+                </a>
+                <a href="https://www.instagram.com/0rtem.k">
+                    <img src="images/insta.png" alt="logotype" style="width:50px;height:50px;">
+                </a>
+                <a href="https://5ka.ru">
+                    <img src="images/skype.png" alt="logotype" style="width:50px;height:50px;">
+                </a>
+                <a href="https://ok.ru">
+                    <img src="images/ok.png" alt="logotype" style="width:50px;height:50px;">
+                </a>
+            </div>
+            <div class="podpis">
+                <a>Cайт разработал Киселёв Артём, Copyright © 2021</a>
+            </div>      
+        </div>
+    </footer>  
+</body>
+</html>
