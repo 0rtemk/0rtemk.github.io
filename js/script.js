@@ -1,17 +1,6 @@
 //kompetetions
-var Theme;
-if (getCookie("theme") == "dark") { Theme = "dark"; }
-else { Theme = "light"; }
-
 function add_theme_1(){
-    if(Theme == "light"){
-        Theme = "dark";
-        setCookie("theme", "dark");
-    }
-    if(Theme == "dark"){
-        Theme = "light";
-        setCookie("theme", "light");
-    }
+    isTheme();
     add_theme_1_1();
 }
 function add_theme_1_1(){
@@ -37,14 +26,7 @@ function add_theme_1_1(){
 
 //main
 function add_theme_2(){
-    if(Theme == "light"){
-        Theme = "dark";
-        setCookie("theme", "dark");
-    }
-    if(Theme == "dark"){
-        Theme = "light";
-        setCookie("theme", "light");
-    }
+    isTheme();
     add_theme_2_1();
 }
 function add_theme_2_1(){
@@ -66,14 +48,7 @@ function add_theme_2_1(){
 }
 //kontacts
 function add_theme_3(){
-    if(Theme == "light"){
-        Theme = "dark";
-        setCookie("theme", "dark");
-    }
-    if(Theme == "dark"){
-        Theme = "light";
-        setCookie("theme", "light");
-    }
+    isTheme();
     add_theme_3_1();
 }
 function add_theme_3_1(){
@@ -105,14 +80,7 @@ function add_theme_3_1(){
 
 //portfolio
 function add_theme_4(){
-    if(Theme == "light"){
-        Theme = "dark";
-        setCookie("theme", "dark");
-    }
-    if(Theme == "dark"){
-        Theme = "light";
-        setCookie("theme", "light");
-    }
+    isTheme();
     add_theme_4_1();
 }
 function add_theme_4_1(){
@@ -141,14 +109,7 @@ function add_theme_4_1(){
 
 //resume
 function add_theme_5(){
-    if(Theme == "light"){
-        Theme = "dark";
-        setCookie("theme", "dark");
-    }
-    if(Theme == "dark"){
-        Theme = "light";
-        setCookie("theme", "light");
-    }
+    isTheme();
     add_theme_5_1();
 }
 function add_theme_5_1(){
