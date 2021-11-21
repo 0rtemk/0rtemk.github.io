@@ -1,9 +1,19 @@
 //kompetetions
+var Theme = "light";
+if(getCookie("theme") == "dark") Theme = "dark";
 
 function add_theme_1(){
-    if(getCookie("theme") == "dark") setCookie("theme", "light");
-    else if(getCookie("theme") == "light") setCookie("theme", "dark");
-    else setCookie("theme", "light");
+    if(Theme == "light"){
+        Theme = "dark";
+        setCookie("theme", "dark");
+    }
+    if(Theme == "dark"){
+        Theme = "light";
+        setCookie("theme", "light");
+    }
+    add_theme_1_1();
+}
+function add_theme_1_1(){
 
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
@@ -25,11 +35,18 @@ function add_theme_1(){
 }
 
 //main
-
 function add_theme_2(){
-    if(getCookie("theme") == "dark") setCookie("theme", "light");
-    else if(getCookie("theme") == "light") setCookie("theme", "dark");
-    else setCookie("theme", "light");
+    if(Theme == "light"){
+        Theme = "dark";
+        setCookie("theme", "dark");
+    }
+    if(Theme == "dark"){
+        Theme = "light";
+        setCookie("theme", "light");
+    }
+    add_theme_2_1();
+}
+function add_theme_2_1(){
 
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
@@ -48,9 +65,17 @@ function add_theme_2(){
 }
 //kontacts
 function add_theme_3(){
-    if(getCookie("theme") == "dark") setCookie("theme", "light");
-    else if(getCookie("theme") == "light") setCookie("theme", "dark");
-    else setCookie("theme", "light");
+    if(Theme == "light"){
+        Theme = "dark";
+        setCookie("theme", "dark");
+    }
+    if(Theme == "dark"){
+        Theme = "light";
+        setCookie("theme", "light");
+    }
+    add_theme_3_1();
+}
+function add_theme_3_1(){
 
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
@@ -79,9 +104,17 @@ function add_theme_3(){
 
 //portfolio
 function add_theme_4(){
-    if(getCookie("theme") == "dark") setCookie("theme", "light");
-    else if(getCookie("theme") == "light") setCookie("theme", "dark");
-    else setCookie("theme", "light");
+    if(Theme == "light"){
+        Theme = "dark";
+        setCookie("theme", "dark");
+    }
+    if(Theme == "dark"){
+        Theme = "light";
+        setCookie("theme", "light");
+    }
+    add_theme_4_1();
+}
+function add_theme_4_1(){
 
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
@@ -107,9 +140,17 @@ function add_theme_4(){
 
 //resume
 function add_theme_5(){
-    if(getCookie("theme") == "dark") setCookie("theme", "light");
-    else if(getCookie("theme") == "light") setCookie("theme", "dark");
-    else setCookie("theme", "light");
+    if(Theme == "light"){
+        Theme = "dark";
+        setCookie("theme", "dark");
+    }
+    if(Theme == "dark"){
+        Theme = "light";
+        setCookie("theme", "light");
+    }
+    add_theme_5_1();
+}
+function add_theme_5_1(){
 
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");

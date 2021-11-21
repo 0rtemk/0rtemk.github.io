@@ -46,18 +46,18 @@ function isButtonShow(){
 }
 
 function isDarkTheme_kompetetions(){
-  if(getCookie("theme") == "dark") { add_theme_1(); }
+  if(getCookie("theme") == "dark") { add_theme_1_1(); }
 }
 function isDarkTheme_main(){
-  if(getCookie("theme") == "dark") { add_theme_2(); }
+  if(getCookie("theme") == "dark") { add_theme_2_1(); }
 }
 function isDarkTheme_kontacts(){
-  if(getCookie("theme") == "dark") { add_theme_3(); }
+  if(getCookie("theme") == "dark") { add_theme_3_1(); }
 }
 function isDarkTheme_portfolio(){
-  if(getCookie("theme") == "dark") { add_theme_4(); }
+  if(getCookie("theme") == "dark") { add_theme_4_1(); }
 }
 function isDarkTheme_resume(){
-  if(getCookie("theme") == "dark") { add_theme_5(); }
+  if(getCookie("theme") == "dark") { add_theme_5_1(); }
 }
 
