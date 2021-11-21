@@ -47,7 +47,7 @@ function isButtonShow(){
 
 function isTheme(){
   if(getCookie("theme") == "light") { setCookie("theme", "dark"); }
-  else if(getCookie("theme") == "dark") { setCookie("theme", "light"); }
+  if(getCookie("theme") == "dark") { setCookie("theme", "light"); }
   else { setCookie("theme", "dark"); }
 }
 function isDarkTheme_kompetetions(){
