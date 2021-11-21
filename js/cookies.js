@@ -45,7 +45,7 @@ function isButtonShow(){
   if(getCookie("button4_style") == "hide") { button2222(); }
 }
 
-function isDarkTheme_kometetions(){
+function isDarkTheme_kompetetions(){
   if(getCookie("theme") == "dark") { add_theme_1(); }
 }
 function isDarkTheme_main(){

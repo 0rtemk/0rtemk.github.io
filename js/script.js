@@ -1,5 +1,7 @@
 //kompetetions
 var Theme = "light";
+if(getCookie("theme") == "dark") Theme = "dark";
+
 function add_theme(){
     if(Theme = "light"){
         Theme = "dark";
