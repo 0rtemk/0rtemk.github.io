@@ -1,14 +1,18 @@
 //kompetetions
 var Theme = "light";
-function add_theme(){
+function add_Theme(){
     if(Theme = "light"){
         Theme = "dark";
         setCookie("theme", "dark");
     }
     if(Theme = "dark"){
         Theme = "light";
-        setCookie("theme", "dark");
+        setCookie("theme", "light");
     }
+    add_theme_1();
+}
+function add_theme_1(){
+
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
 
@@ -27,6 +31,7 @@ function add_theme(){
     document.getElementById("article_id").classList.toggle("article_light");
     document.getElementById("article_id").classList.toggle("article_dark");
 }
+
 //main
 function add_theme_2(){
     if(Theme = "light"){
@@ -35,8 +40,12 @@ function add_theme_2(){
     }
     if(Theme = "dark"){
         Theme = "light";
-        setCookie("theme", "dark");
+        setCookie("theme", "light");
     }
+    add_theme_2_1();
+}
+function add_theme_2_1(){
+
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
 
@@ -60,8 +69,11 @@ function add_theme_3(){
     }
     if(Theme = "dark"){
         Theme = "light";
-        setCookie("theme", "dark");
+        setCookie("theme", "light");
     }
+    add_theme_3_1();
+}
+function add_theme_3_1(){
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
 
@@ -86,6 +98,7 @@ function add_theme_3(){
     document.getElementById("form_id").classList.toggle("background-color-pink");
     document.getElementById("form_id").classList.toggle("background-color-grey");
 }
+
 //portfolio
 function add_theme_4(){
     if(Theme = "light"){
@@ -94,8 +107,12 @@ function add_theme_4(){
     }
     if(Theme = "dark"){
         Theme = "light";
-        setCookie("theme", "dark");
+        setCookie("theme", "light");
     }
+    add_theme_4_1();
+}
+function add_theme_4_1(){
+
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
 
@@ -117,6 +134,7 @@ function add_theme_4(){
     document.getElementById("main_id3").classList.toggle("background-color-black");
     document.getElementById("main_id3").classList.toggle("background-color-white");
 }
+
 //resume
 function add_theme_5(){
     if(Theme = "light"){
@@ -125,8 +143,12 @@ function add_theme_5(){
     }
     if(Theme = "dark"){
         Theme = "light";
-        setCookie("theme", "dark");
+        setCookie("theme", "light");
     }
+    add_theme_5_1();
+}
+function add_theme_5_1(){
+
     document.getElementById("body_id").classList.toggle("body_dark");
     document.getElementById("body_id").classList.toggle("body_light");
 
