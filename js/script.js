@@ -1,7 +1,6 @@
 //kompetetions
 var Theme;
 if (getCookie("theme") == "dark") { Theme = "dark"; }
-else if (getCookie("theme") == "light") { Theme = "light"; }
 else { Theme = "light"; }
 
 function add_theme_1(){
