@@ -311,48 +311,7 @@ removeClass(current, 'active');
 addClass(next, 'active');
 }, 10000);
 
-/*function fun1() {
-    document.getElementById("image_size").classList.toggle("image_min");
-    document.getElementById("image_size").classList.remove("image_averange");
-    document.getElementById("image_size").classList.remove("image_max");
 
-    document.getElementById("left").classList.toggle("buttons_main_min");
-    document.getElementById("left").classList.remove("buttons_main_averange");
-    document.getElementById("left").classList.toggle("buttons_main_max");
-
-    document.getElementById("right").classList.toggle("buttons_main_min");
-    document.getElementById("right").classList.remove("buttons_main_averange");
-    document.getElementById("right").classList.toggle("buttons_main_max");
-}
-
-function fun2(){
-    document.getElementById("image_size").classList.toggle("image_averange");
-    document.getElementById("image_size").classList.remove("image_min");
-    document.getElementById("image_size").classList.remove("image_max");
-
-    document.getElementById("left").classList.toggle("buttons_main_averange");
-    document.getElementById("left").classList.remove("buttons_main_min");
-    document.getElementById("left").classList.toggle("buttons_main_max");
-
-    document.getElementById("right").classList.toggle("buttons_main_averange");
-    document.getElementById("right").classList.remove("buttons_main_min");
-    document.getElementById("right").classList.toggle("buttons_main_max");
-
-}
-
-function fun3(){
-    document.getElementById("image_size").classList.toggle("image_max");
-    document.getElementById("image_size").classList.remove("image_averange");
-    document.getElementById("image_size").classList.remove("image_min");
-
-    document.getElementById("left").classList.toggle("buttons_main_max");
-    document.getElementById("left").classList.remove("buttons_main_averange");
-    document.getElementById("left").classList.toggle("buttons_main_min");
-
-    document.getElementById("right").classList.toggle("buttons_main_max");
-    document.getElementById("right").classList.remove("buttons_main_averange");
-    document.getElementById("right").classList.toggle("buttons_main_min");
-}*/
 
 
 

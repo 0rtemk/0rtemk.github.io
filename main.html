@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <script src = "js/script.js"></script>
     <script src = "js/cookies.js"></script>
+    <scrint src = "js/gallery_size.js"></scrint>
 </head>
 <body class = "body_light" id = "body_id" onload = "isDarkTheme_main();">
     <a class="logo" href="main.html"><img src="images/logo.jpg" alt="logotype" style="width:77px;height:77px;"></a>
@@ -32,16 +33,16 @@
     <div class="main">
 
         <section class = "gallery" onload = "images();">
-            <!--<div class = "wrapper flex-row-div">
+            <<div class = "wrapper flex-row-div">
                 <div>
                     Размер галереи:
                 </div>
                 <div>
-                    <input type="radio" name="gallery_size" id="gallery_size1" onclick = "fun1()">Маленький
-                    <input type="radio" name="gallery_size" id="gallery_size2" onclick = "fun2()">Средний
-                    <input type="radio" name="gallery_size" id="gallery_size3" onclick = "fun3()">Большой
+                    <input type="radio" name="gallery_size" id="gallery_size1" onclick = "Gallery_min()">Маленький
+                    <input type="radio" name="gallery_size" id="gallery_size2" onclick = "Gallery_averange()">Средний
+                    <input type="radio" name="gallery_size" id="gallery_size3" onclick = "Gallery_max()">Большой
                 </div>
-            </div>-->
+            </div>
             <div class = "all-foto flex-container">
                 <div>
                     <button class = "buttons_main_min" onclick="left();" id = "left"> < </button>
