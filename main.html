@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <script src = "js/script.js"></script>
     <script src = "js/cookies.js"></script>
-    <scrint src = "js/gallery_size.js"></scrint>
 </head>
 <body class = "body_light" id = "body_id" onload = "isDarkTheme_main();">
     <a class="logo" href="main.html"><img src="images/logo.jpg" alt="logotype" style="width:77px;height:77px;"></a>
@@ -33,17 +32,7 @@
     <div class="main">
 
         <section class = "gallery" onload = "images();">
-            <<div class = "wrapper flex-row-div">
-                <div>
-                    Размер галереи:
-                </div>
-                <div>
-                    <input type="radio" name="gallery_size" id="gallery_size1" onclick = "Gallery_min()">Маленький
-                    <input type="radio" name="gallery_size" id="gallery_size2" onclick = "Gallery_averange()">Средний
-                    <input type="radio" name="gallery_size" id="gallery_size3" onclick = "Gallery_max()">Большой
-                </div>
-            </div>
-            <div class = "all-foto flex-container">
+            <div class = "all-foto flex-container" style="padding-top: 2rem">
                 <div>
                     <button class = "buttons_main_min" onclick="left();" id = "left"> < </button>
                 </div>
@@ -56,6 +45,20 @@
                 <div>
                     <button class = "buttons_main_min" onclick="right();" id = "right"> > </button>
                 </div>                
+            </div>
+            <div class = "all-photo flex-container">
+                <div style="padding-top: 5px;">
+                    Размер галереи:
+                </div>
+                <div style="padding-top: 5px;">
+                    <input type="radio" name="gallery_size" id="gallery_size1" onclick = "Gallery_min()" checked>Маленький
+                    <input type="radio" name="gallery_size" id="gallery_size2" onclick = "Gallery_average()">Средний
+                    <input type="radio" name="gallery_size" id="gallery_size3" onclick = "Gallery_max()">Большой
+                </div>
+                <div style="font-size: 35px; padding-left: 50px;">|</div>
+                <div style="padding-left: 50px;">
+                    <button class = "start" id = "Timer" onclick="GalleryInterval()">Старт/Стоп</button>
+                </div>
             </div>
         </section>
         
