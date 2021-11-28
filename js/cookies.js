@@ -45,6 +45,7 @@ function isButtonShow(){
   if(getCookie("button4_style") == "hide") { button2222(); }
 }
 
+
 function isTheme(){
   //if(getCookie("theme") == "light") { setCookie("theme", "dark"); }
   if(getCookie("theme") == "dark") 

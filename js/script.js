@@ -326,6 +326,7 @@ function GalleryInterval(){
 }
 
 
+
 function Gallery_min(){
     var TT = document.getElementById('images_size');
     if (!(TT.classList.contains('img_min'))){
