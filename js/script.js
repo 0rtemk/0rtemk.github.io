@@ -300,24 +300,17 @@ function left(){
     addClass(next, 'active');
 }
 
-function GalleryInterval_1(){
-    if(getCookie("gallery") == "start"){ 
-        deleteCookie("gallery");
-        setCookie("gallery", "stop");
-    }
-    else {setCookie("gallery", "start");}
-    GalleryInterval();
-}
-
 var timer;
 function GalleryInterval(){
     var TT = document.getElementById("Timer");
     if(TT.classList.contains("stop")){
+        setCookie("gallery", "start");
         clearInterval(timer);
         TT.classList.remove("stop");
         TT.classList.add("start");
     }
     else if(TT.classList.contains("start")){
+        setCookie("gallery", "stop");
         TT.classList.remove("start");
         TT.classList.add("stop");
         timer = setInterval(function() {

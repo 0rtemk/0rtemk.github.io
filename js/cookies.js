@@ -76,5 +76,5 @@ function isGallerySize(){
   if(getCookie("gallery_size") == "min") { Gallery_min(); }
   if(getCookie("gallery_size") == "average") { Gallery_average(); }
   if(getCookie("gallery_size") == "max") { Gallery_max(); }
-  if(getCookie("gallery") == "stop") { GalleryInterval_1(); }
+  if(getCookie("gallery") == "stop") { GalleryInterval(); }
 }
