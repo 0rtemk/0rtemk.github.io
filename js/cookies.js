@@ -55,6 +55,7 @@ function isTheme(){
   }
   else { setCookie("theme", "dark"); }
 }
+
 function isDarkTheme_kompetetions(){
   if(getCookie("theme") == "dark") { add_theme_1_1(); }
 }
@@ -71,3 +72,12 @@ function isDarkTheme_resume(){
   if(getCookie("theme") == "dark") { add_theme_5_1(); }
 }
 
+function isGalleryStop(){
+
+}
+
+function isGallerySize(){
+  if(getCookie("gallery_size") == "min"){Gallery_min();}
+  if(getCookie("gallery_size") == "average"){Gallery_average();}
+  if(getCookie("gallery_size") == "max"){Gallery_max();}
+}

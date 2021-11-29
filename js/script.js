@@ -321,13 +321,15 @@ function GalleryInterval(){
             
             removeClass(current, 'active');
             addClass(next, 'active');
-        }, 10000);
+        }, 7000);
     }
 }
 
 
 
 function Gallery_min(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "min");
     var TT = document.getElementById('images_size');
     if (!(TT.classList.contains('img_min'))){
         TT.classList.add('img_min');
@@ -357,6 +359,8 @@ function Gallery_min(){
 }
 
 function Gallery_average(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "average");
     var TT = document.getElementById('images_size');
     if (!(TT.classList.contains("img_average"))){
         TT.classList.add('img_average');
@@ -385,6 +389,8 @@ function Gallery_average(){
 }
 
 function Gallery_max(){
+    deleteCookie("gallery_size");
+    setCookie("gallery_size", "max");
     var TT = document.getElementById('images_size');
     if (!(TT.classList.contains('img_max'))){
         TT.classList.add('img_max');
