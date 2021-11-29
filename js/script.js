@@ -300,14 +300,17 @@ function left(){
     addClass(next, 'active');
 }
 
-var timer;
-function GalleryInterval(){
+function GalleryInterval_1(){
     if(getCookie("gallery") == "start"){ 
         deleteCookie("gallery");
         setCookie("gallery", "stop");
     }
     else {setCookie("gallery", "start");}
+    GalleryInterval();
+}
 
+var timer;
+function GalleryInterval(){
     var TT = document.getElementById("Timer");
     if(TT.classList.contains("stop")){
         clearInterval(timer);
