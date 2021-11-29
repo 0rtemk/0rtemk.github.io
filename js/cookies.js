@@ -73,13 +73,12 @@ function isDarkTheme_resume(){
 }
 
 function isGalleryStop(){
-  if(getCookie("gallery") == "stop"){
-    GalleryInterval();
-  }
+  
 }
 
 function isGallerySize(){
-  if(getCookie("gallery_size") == "min"){Gallery_min();}
-  if(getCookie("gallery_size") == "average"){Gallery_average();}
-  if(getCookie("gallery_size") == "max"){Gallery_max();}
+  if(getCookie("gallery_size") == "min") { Gallery_min(); }
+  if(getCookie("gallery_size") == "average") { Gallery_average(); }
+  if(getCookie("gallery_size") == "max") { Gallery_max(); }
+  if(getCookie("gallery") == "stop") { GalleryInterval(); }
 }
