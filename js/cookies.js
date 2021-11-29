@@ -72,13 +72,9 @@ function isDarkTheme_resume(){
   if(getCookie("theme") == "dark") { add_theme_5_1(); }
 }
 
-function isGalleryStop(){
-  
-}
-
 function isGallerySize(){
   if(getCookie("gallery_size") == "min") { Gallery_min(); }
   if(getCookie("gallery_size") == "average") { Gallery_average(); }
   if(getCookie("gallery_size") == "max") { Gallery_max(); }
-  if(getCookie("gallery") == "stop") { GalleryInterval(); }
+  if(getCookie("gallery") == "start") { GalleryInterval(); }
 }

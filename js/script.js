@@ -304,14 +304,14 @@ var timer;
 function GalleryInterval(){
     var TT = document.getElementById("Timer");
     if(TT.classList.contains("stop")){
-        deleteCookie("gallery");
+        //deleteCookie("gallery");
         setCookie("gallery", "start");
         clearInterval(timer);
         TT.classList.remove("stop");
         TT.classList.add("start");
     }
     else if(TT.classList.contains("start")){
-        deleteCookie("gallery");
+        //deleteCookie("gallery");
         setCookie("gallery", "stop");
         TT.classList.remove("start");
         TT.classList.add("stop");
