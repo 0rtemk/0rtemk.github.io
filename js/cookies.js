@@ -73,7 +73,9 @@ function isDarkTheme_resume(){
 }
 
 function isGalleryStop(){
-
+  if(getCookie("gallery") == "stop"){
+    GalleryInterval();
+  }
 }
 
 function isGallerySize(){
