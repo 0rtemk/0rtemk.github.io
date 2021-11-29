@@ -302,12 +302,12 @@ function left(){
 
 var timer;
 function GalleryInterval(){
-    if(getCookie("gallery") == "stop"){ 
+    if(getCookie("gallery") == "start"){ 
         deleteCookie("gallery");
-        setCookie("gallery", "start");
+        setCookie("gallery", "stop");
     }
-    else {setCookie("gallery", "stop");}
-    
+    else {setCookie("gallery", "start");}
+
     var TT = document.getElementById("Timer");
     if(TT.classList.contains("stop")){
         clearInterval(timer);
