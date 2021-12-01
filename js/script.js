@@ -43,6 +43,9 @@ function add_theme_2_1(){
     document.getElementById("main_id").classList.toggle("background-color-grey");
     document.getElementById("main_id").classList.toggle("background-color-pink");
 
+    document.getElementById("other_id").classList.toggle("background-color-grey");
+    document.getElementById("other_id").classList.toggle("background-color-pink");
+
     document.getElementById("article_id").classList.toggle("article_light");
     document.getElementById("article_id").classList.toggle("article_dark");
 }

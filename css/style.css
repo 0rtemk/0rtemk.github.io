@@ -268,19 +268,6 @@ form{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#canvas {
-    border: 1px solid black;
-    margin-top: 25px;
-}
-.text_canvas{
-    position: absolute;
-    width: 50px;
-}
-.button_canvas{
-    position: absolute;
-    margin-left: 60px;
-}
-
 
 
 
