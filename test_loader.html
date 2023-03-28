@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="main-content">
+        <h1>Hello World!</h1>
+        <p>
+            This is a demo Project to show how to add animated loading with Vanilla
+            JavaScript.
+        </p>
+        <div class="buttons">
+            <button class="btn"><a href="#">Read Article</a></button>
+            <button class="btn get-quote">Generate Quote</button>
+        </div>
+        <div class="quote-section">
+            <blockquote class="quote">
+                If you do not express your own original ideas, if you do not listen to
+                your own being, you will have betrayed yourself.
+            </blockquote>
+            <span class="author">- Rollo May</span>
+        </div>
+    </div>
+</body>
+<style>
+    .loader-container {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        background: #000 url("https://giphy.com/embed/3oEjI6SIIHBdRxXI40") center no-repeat;
+        z-index: 1;
+    }
+</style>
+<script>
+    const loaderContainer = document.querySelector('.loader-container');
+    // window.addEventListener('load', () => {
+    //     loaderContainer.style.display = 'none';
+    // });
+</script>
+</html>

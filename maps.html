@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="maps.js"></script>
     <title>Document</title>
 </head>
 
@@ -67,6 +69,23 @@
             </ul>
         </div>
     </nav>
+    <main>
+        <div class="bg-white p-4 m-3 rounded-3 shadow">
+            <p>Basic map</p>
+            <div id="map" class="loader-container">
+            </div>
+        </div>
+    </main>
 </body>
+<style>
+    .loader-container {
+        width: 100%;
+        height: 400px;
+        background: #fff 
+            url("https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47ktqj2z67tc69n739u230iyevh8981ulxtoqqib0z&rid=giphy.gif&ct=g") 
+            center no-repeat;
+        z-index: 1;
+    }
+</style>
 
 </html>
