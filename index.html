@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            border: 1px solid #eee;
+            table-layout: fixed;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .table th {
+            font-weight: bold;
+            padding: 5px;
+            background: #efefef;
+            border: 1px solid #dddddd;
+        }
+
+        .table td {
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: #F7F7F7;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #eee;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+                background-color: white;
+            }
+
+            .card-heading {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .table {
+                display: none;
+            }
+
+            .card-second {
+                border: 1px solid #ddd;
+                padding: 10px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+
+            .card-detail {
+                display: none;
+            }
+
+            .toggle-detail {
+                padding: 5px 10px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Вариант - карточки</h2>
+    <div id="cards-container" style="display: none;"></div>
+    <h2>Вариант - скрытые карточки</h2>
+    <div id="cards-container-second" style="display: none;"></div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Класс автомобиля</th>
+                <th>Минимальный рост пилота</th>
+                <th>Пн, вт, ср и чт</th>
+                <th>Пт, сб, вс, праздники</th>
+                <th>Продолжительность заезда</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Карт МИНИ детский</td>
+                <td>Рост от 125 см</td>
+                <td>1300р</td>
+                <td>1600р</td>
+                <td>10 минут</td>
+            </tr>
+            <tr>
+                <td>Карт ПРОКАТ</td>
+                <td>Рост от 140 см</td>
+                <td>1300р</td>
+                <td>1600р</td>
+                <td>10 минут</td>
+            </tr>
+            <tr>
+                <td>Карт МИНИ клуб детский</td>
+                <td>Рост от 125 см (клубная карта)</td>
+                <td>2100р</td>
+                <td>2100р</td>
+                <td>10 минут</td>
+            </tr>
+            <tr>
+                <td>Карт КЛУБ взрослый</td>
+                <td>Рост от 140 см (клубная карта)</td>
+                <td>2100р</td>
+                <td>2100р</td>
+                <td>10 минут</td>
+            </tr>
+            <tr>
+                <td>Симулятор картинга</td>
+                <td>Рост от 120 см</td>
+                <td>600p</td>
+                <td>600p</td>
+                <td>15 минут</td>
+            </tr>
+            <tr>
+                <td>Карт Двухместная машина</td>
+                <td>Управление 18+<br> Рост от 115см<br> Общий вес 160кг</td>
+                <td>2100p</td>
+                <td>2100p</td>
+                <td>10 минут</td>
+            </tr>
+            <tr>
+                <td>Электро трициклы и квадроциклы</td>
+                <td>от 3-х до 4-х лет<br> До 15кг</td>
+                <td>600p</td>
+                <td>800p</td>
+                <td>10 минут</td>
+            </tr>
+        </tbody>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                function createCards() {
+                    var $cardsContainer = $('#cards-container');
+                    $cardsContainer.empty();
+
+                    $('.table tbody tr').each(function () {
+                        var $card = $('<div class="card"></div>');
+
+                        $(this).find('td').each(function (index) {
+                            var heading = $('.table thead th').eq(index).text();
+                            $card.append('<div><strong>' + heading + ':</strong> ' + $(this).text() + '</div>');
+                        });
+
+                        $cardsContainer.append($card);
+                    });
+                }
+
+                function createCardsSecond() {
+                    var $cardsContainerSecond = $('#cards-container-second');
+                    $cardsContainerSecond.empty();
+
+                    $('.table tbody tr').each(function () {
+                        var $cardSecond = $('<div class="card-second"></div>');
+                        $('td', this).each(function (index) {
+                            var heading = $('.table thead th').eq(index).text();
+                            var content = $(this).text();
+                            if (index === 0) {
+                                $cardSecond.append('<div class="card-title">' + heading + ': ' + content + '</div>');
+                            } else {
+                                $cardSecond.append('<div class="card-detail" style="display: none;">' + heading + ': ' + content + '</div>');
+                            }
+                        });
+                        var $button = $('<button class="toggle-detail">Подробнее</button>');
+                        $cardSecond.append($button);
+                        $cardsContainerSecond.append($cardSecond);
+                    });
+                }
+
+                $('body').on('click', '.toggle-detail', function () {
+                    $(this).siblings('.card-detail').slideToggle(200);
+                    $(this).text(function (i, text) {
+                        return text === "Подробнее" ? "Свернуть" : "Подробнее";
+                    });
+                });
+
+                function toggleDisplay() {
+                    if ($(window).width() < 600) {
+                        $('.table').hide();
+                        $('h2').show();
+                        $('#cards-container').show();
+                        $('#cards-container-second').show();
+                    } else {
+                        $('.table').show();
+                        $('h2').hide();
+                        $('#cards-container').hide();
+                        $('#cards-container-second').hide();
+                    }
+                }
+
+                createCards();
+                createCardsSecond();
+                toggleDisplay();
+
+                $(window).resize(function () {
+                    toggleDisplay();
+                });
+            });
+        </script>
+</body>
+
+</html>
