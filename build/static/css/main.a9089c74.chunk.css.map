@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,WACE,gBACF,CAEA,MACE,YACF,CAEA,MACE,eACF,CAEA,OACE,eACF","file":"main.a9089c74.chunk.css","sourcesContent":[".container {\n  margin: 10px 20px;\n}\n\ninput {\n  margin: 8px 0;\n}\n\nlabel {\n  font-weight: 700;\n}\n\n.title {\n  margin-top: 10px;\n}\n"]}
